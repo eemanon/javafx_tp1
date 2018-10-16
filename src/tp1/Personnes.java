@@ -21,7 +21,7 @@ class Personnes {
     public Personnes(){
         this.list = FXCollections.observableArrayList();
         this.list.add(new Personne("admin","admin", "seb", "5, rue du point", "", "666", "777"));
-        this.list.add(new Personne("lilbastard","bitch", "noname", "6, rue qui pue", "", "123", "456"));
+        this.list.add(new Personne("gentil","monsieur", "noname", "6, rue", "", "123", "456"));
     }
     
     public Personne identification(String login, String pw){

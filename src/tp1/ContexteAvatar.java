@@ -27,26 +27,4 @@ public class ContexteAvatar {
     public ContexteAvatar(Personne p) {
         this.personne = p;
     }
-
-    private StringProperty eye_color;
-    private StringProperty hair_color;
-    private IntegerProperty hair_lenght;
-    private StringProperty detail;
-
-    public StringProperty getHair_color() {
-        return hair_color;
-    }
-
-    public IntegerProperty getHair_lenght() {
-        return hair_lenght;
-    }
-
-    public StringProperty getDetail() {
-        return detail;
-    }
-
-    public StringProperty getEye_color() {
-        return eye_color;
-    }
-
 }

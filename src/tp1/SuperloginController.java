@@ -33,6 +33,7 @@ public class SuperloginController implements Initializable {
     @FXML
     private TextField name;
 
+
     ContexteIdentification contexte;
     
     @FXML
@@ -73,8 +74,8 @@ public class SuperloginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        name.setText("hello sexy");
-        pw.setText("lemeilleurpw");
+        name.setText("admin");
+        pw.setText("admin");
         name.requestFocus();
     }
 

@@ -5,8 +5,12 @@
  */
 package tp1;
 
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleDoubleProperty;
 
 /**
  *
@@ -22,7 +26,10 @@ class Personne {
     private final StringProperty citypc = new SimpleStringProperty();
     private final StringProperty tel1 = new SimpleStringProperty();
     private final StringProperty tel2 = new SimpleStringProperty();    
-    private Properties properties = new Properties();
+    private final ObjectProperty<Couleur> hair_color = new SimpleObjectProperty();
+    private final StringProperty eye_color = new SimpleStringProperty();
+    private final DoubleProperty hairLength = new SimpleDoubleProperty();
+    private final StringProperty details = new SimpleStringProperty();  
 
     public Personne(String login, String pw, String name, String address1, String address2, String tel1, String tel2) {
         this.login.set(login);
@@ -32,9 +39,14 @@ class Personne {
         this.address2.set(address2);
         this.tel1.set(tel1);
         this.tel2.set(tel2);
-    }
-
+    }    
     
+    public String getEyeColor(){
+        return eye_color.get();
+    }
+    public StringProperty getEyeColorProperty(){
+        return eye_color;
+    }
     
     public String getLogin() {
         return login.get();

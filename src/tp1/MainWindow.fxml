@@ -40,7 +40,7 @@
       </GridPane>
    </left>
    <center>
-      <Canvas height="276.0" width="322.0" BorderPane.alignment="CENTER" />
+      <Canvas fx:id="canvasID" height="276.0" width="322.0" BorderPane.alignment="CENTER" />
    </center>
    <top>
       <Label text="Configure your Avatar" BorderPane.alignment="CENTER">
